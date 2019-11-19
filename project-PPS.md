@@ -230,27 +230,6 @@ int main()
 ```
 ```c
 #include<stdio.h>
-float multi(float a,float b);
-int main()
-{
- float m,n;
- printf("\n Please enter a number : \n");
- scanf("%f",&m);
- printf("\n Please add another number\n");
- scanf("%f",&n);
-
-float result=multi(m,n);
-printf("result is %.5f\n",result);
-}
-
-float multi(float a,float b)
-{
-float multiple=a*b;
-return(multiple);
-}
-```
-```c
-#include<stdio.h>
 int main()
 {
 int n,i,j;
