@@ -466,68 +466,6 @@ ans=(a+b+c+d+e)/5;
 return ans;
 }
 ```
-```c
-#include<stdio.h>
-int main(){
-printf("use operators + ,-,*,/\n");
-puts("+ FOR ADDITION");
-puts("- FOR SUBTRACTION");
-puts("* FOR MULTIPLICATION");
-puts("/ FOR DIVIDING");
-
-int n,i;
-printf("\n\nhow many times you want to perform operation  ");
-scanf("%d",&n);
-int a,d;
-char c;
-int sum;
-printf("enter the number  ");
-scanf("%d",&a);
-printf("enter operator  ");
-scanf(" %c",&c);
-if(c=='+'||c=='-'||c=='*'||c=='/'){
-for(int i=1;i<=n;i++)
-{if(i==1){
-printf("enter another operatant  ");
-scanf("%d",&d);
-if(c=='+')
-sum=d+a;
-if(c=='-')
-sum=d-a;
-if(c=='*')
-sum=d*a;
-if(c=='/')
-sum=d/a;
-}
-if(i>1){
-puts(" ");
-printf("enter another operator ");
-scanf(" %c",&c);
-if(c=='+'||c=='-'||c=='*'||c=='/'){
-printf("enter other operand ");
-scanf("%d",&a);
-if(c=='+')
-sum=sum+a;
-if(c=='-')
-sum=sum-a;
-if(c=='*')
-sum=sum*a;
-if(c=='/')
-sum=sum/a;
-
-}
-else
-printf("enter correct operator");
-}}
-printf("answer is %d\n",sum);
-
-}
-
-else
-printf("enter correct operator");
-return 0;
-}
-```
 ```C
 #include<stdio.h>
 int main()
