@@ -389,6 +389,12 @@ printf("the given number %d is not an armstrong number\n",no);
 return 0;
 }
 ```
+# Output
+```c
+enter  a number:
+153
+the given number 153 is an armstrong number
+```
 ```c
 #include<stdio.h>
 int sum(int c);
