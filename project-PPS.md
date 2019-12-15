@@ -49,31 +49,9 @@ printf("Given number %d is Odd \n",num);
 return 0;
 }
 ```
- #Program to check whether the number is even or odd.
+ # Program to check whether the number is even or odd.
  ```c
     #include<stdio.h>
-
-int main()
-{
-
-int num;
-printf("Enter any number: \n");
-scanf("%d",&num);
-
-if(num>0)
-printf("%d is positive number \n",num );
-
-else if(num<0)
-printf("%d is negative number \n",num );
-
-else
-printf("You have entered value zero \n");
-
-return 0;
-}
-```
-```c
-#include<stdio.h>
 
 int main()
 {
@@ -124,6 +102,7 @@ break;
 return 0;
 }
 ```
+# Program to display the table between the range.
 ```c
 #include<stdio.h>
 int main()
@@ -141,6 +120,7 @@ printf("%d X %d = %d\n",n,i,n*i);
 return 0;
 }
 ```
+# Program to display the table of user choice.
 ```c
 #include<stdio.h>
 int main()
@@ -155,6 +135,7 @@ printf("%d x %d = %d\n",j,i,j*i);
 return 0;
 }
 ```
+# Program to display the table of only even numbers between the range.
 ```c
 #include<stdio.h>
 int main()
@@ -175,6 +156,7 @@ printf("Number is not even\n");
 return 0;
 }
 ```
+# Program to convert farheneit into centigrade.
 ```c
 #include<stdio.h>
 
@@ -192,6 +174,7 @@ printf("\n %.2f fehrenheit= %.2f celcius \n", fehrenheit,celcius);
 return 0;
 }
 ```
+# Program to
 ```c
 #include<stdio.h>
 
@@ -211,6 +194,7 @@ int main()
  return 0;
 }
 ```
+# Program 
 ```c
 #include<stdio.h>
 int main()
@@ -231,6 +215,7 @@ int main()
 }
 }
 ```
+# Program to draw pyramid.
 ```c
 #include<stdio.h>
 int main()
@@ -253,6 +238,7 @@ printf("\n");
 return 0;
 }
 ```
+
 ```c
 #include<stdio.h>
 int main(){
@@ -381,6 +367,7 @@ printf("no");
 }
 return 0;}
 ```
+# Program to check whether the number is armstrong number or not.
 ```c
 #include<stdio.h>
 int main(){
@@ -514,4 +501,36 @@ printf("\n");
 return 0;
 }
 ```
-
+# Program of a FIZZBUZZGAME.
+```C
+#include <stdio.h> 
+  
+int main() 
+{ 
+    int i; 
+    for (i=1; i<=100; i++) 
+    { 
+        // number divisible by 3 and 5 will 
+        // always be divisible by 15, print  
+        // 'FizzBuzz' in place of the number 
+        if (i%15 == 0)         
+            printf ("FizzBuzz\t");     
+          
+        // number divisible by 3? print 'Fizz' 
+        // in place of the number 
+        else if ((i%3) == 0)     
+            printf("Fizz\t");                  
+          
+        // number divisible by 5, print 'Buzz'   
+        // in place of the number 
+        else if ((i%5) == 0)                        
+            printf("Buzz\t");                  
+      
+        else // print the number             
+            printf("%d\t", i);                  
+  
+    } 
+  
+    return 0; 
+} 
+```
