@@ -31,6 +31,7 @@ printf("%d\n",sum);
 return 0;
 }
 ```
+# Program to find whether the number is even or odd.
 ```c
 #include<stdio.h>
 int main()
@@ -48,6 +49,7 @@ printf("Given number %d is Odd \n",num);
 return 0;
 }
 ```
+ #Program to check whether the number is even or odd.
  ```c
     #include<stdio.h>
 
