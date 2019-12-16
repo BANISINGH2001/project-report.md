@@ -13,16 +13,34 @@ ___________________________________
 
 |## Sno.	|									|
 ---------|-----------------------------------------------------------------|
-|  1	|									|
-|   2	|									|
-|	3|									|
-|	4|								|
-|	|									|
-|	|									|
-|	|									|
-|	|									|
-|	|									|
-|	|
+|  1	|Program to find the total experience of employees									|
+|   2	|	Program to find whether the number is even or odd.								|
+|	3|	Program to check whether the number is positive or negative.						
+|	4|	Program to display the table between the range.							|
+|5|		Program to display the table of user choice.							|
+|6	|	Program to display the table of only even numbers between the range.	|
+|	7|	Program to convert farheneit into centigrade.								|
+|	8|	Program to draw pyramid.								|
+|9	|	Program to check whether the number is armstrong number or not.			|
+|	10|Program of a FIZZBUZZGAME.	|
+|11	| Program to find sum of two numbers using scanf.	|
+|12	|Program to find the average of numbers using functions.	|
+|13	|Program to create simple calculator using switch.	|
+|14	|Program to find the Factorial of a number.		|
+|15	|Program to find the factorial of a number using recursion.		|
+|16	|Program to find the factorial of a number using recursion.	|
+|17	|Program to enter elements in an array and show all enen numbers.		|
+|18	|Program to find greater among an array.		|
+|19	|Program to display fibonacci series.		|
+|20	| Program to sort array elements using selection sort.|
+
+
+
+
+
+
+
+
 # Program to find the total experience of employees.
 
 ```c
