@@ -553,3 +553,182 @@ Fizz    73    74    FizzBuzz    76    77    Fizz    79    Buzz    Fizz
 82    83    Fizz    Buzz    86    Fizz    88    89    FizzBuzz    91    
 92    Fizz    94    Buzz    Fizz    97    98    Fizz    Buzz    
 ```
+```c
+#include<stdio.h>
+ 
+int main()
+{
+   int a, b, sum;
+ 
+   printf("\nEnter two no: ");
+   scanf("%d %d", &a, &b);
+ 
+   sum = a + b;
+ 
+   printf("Sum : %d", sum);
+ 
+   return(0);
+}
+```
+# Output
+```c
+Enter two no: 5 6
+Sum : 11
+```
+# Program to find the average of numbers using functions.
+```c
+#include <stdio.h>
+float average(int a, int b){
+    return (float)(a+b)/2;
+}
+int main()
+{
+    int num1, num2;
+    float avg;
+
+    printf("Enter first number: ");
+    scanf("%d",&num1);
+    printf("Enter second number: ");
+    scanf("%d",&num2);
+
+    avg = average(num1, num2);
+
+    //%.2f is used for displaying output upto two decimal places
+    printf("Average of %d and %d is: %.2f",num1,num2,avg);
+
+    return 0;
+}
+```
+# Output
+```c
+Enter first number: 20
+Enter second number: 13
+Average of 20 and 13 is: 16.50
+```
+# Program to create simple calculator using switch.
+```c
+#include <stdio.h>
+ 
+int main()
+{
+    int num1,num2;
+    float result;
+    char ch;    //to store operator choice
+     
+    printf("Enter first number: ");
+    scanf("%d",&num1);
+    printf("Enter second number: ");
+    scanf("%d",&num2);
+     
+    printf("Choose operation to perform (+,-,*,/,%): ");
+    scanf(" %c",&ch);
+     
+    result=0;
+    switch(ch)    
+    {
+        case '+':
+            result=num1+num2;
+            break;
+             
+        case '-':
+            result=num1-num2;
+            break;
+         
+        case '*':
+            result=num1*num2;
+            break;
+             
+        case '/':
+            result=(float)num1/(float)num2;
+            break;
+             
+        case '%':
+            result=num1%num2;
+            break;
+        default:
+            printf("Invalid operation.\n");
+    }
+ 
+    printf("Result: %d %c %d = %f\n",num1,ch,num2,result);
+    return 0;
+}
+```
+# Output
+```c
+First run:
+    Enter first number: 10
+    Enter second number: 20 
+    Choose operation to perform (+,-,*,/,%): +
+    Result: 10 + 20 = 30.000000 
+
+    Second run:
+    Enter first number: 10
+    Enter second number: 3
+    Choose operation to perform (+,-,*,/,%): /
+    Result: 10 / 3 = 3.333333 
+
+    Third run:
+    Enter first number: 10
+    Enter second number: 3
+    Choose operation to perform (+,-,*,/,%): >
+    Invalid operation.
+   
+```
+# Program to find the Factorial of a number.
+```c
+#include <stdio.h>
+ 
+int main()
+{
+  int c, n, f = 1;
+ 
+  printf("Enter a number to calculate its factorial\n");
+  scanf("%d", &n);
+  for (c = 1; c <= n; c++)
+    f = f * c;
+ 
+  printf("Factorial of %d = %d\n", n, f);
+ 
+  return 0;
+}
+```
+# Output
+```c
+Enter a number to calculate its factorial
+6
+Factorial of 6 = 720
+```
+# Program to find the factorial of a number using recursion.
+
+```c
+#include<stdio.h>
+int find_factorial(int);
+int main()
+{
+   int num, fact;
+   //Ask user for the input and store it in num
+   printf("\nEnter any integer number:");
+   scanf("%d",&num);
+ 
+   //Calling our user defined function
+   fact =find_factorial(num);
+ 
+   //Displaying factorial of input number
+   printf("\nfactorial of %d is: %d",num, fact);
+   return 0;
+}
+int find_factorial(int n)
+{
+   //Factorial of 0 is 1 
+   if(n==0)
+      return(1);
+ 
+   //Function calling itself: recursion
+   return(n*find_factorial(n-1));
+}
+```
+# Output
+```c
+Enter any integer number: 4
+factorial of 4 is: 24
+```
