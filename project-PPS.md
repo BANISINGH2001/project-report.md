@@ -336,6 +336,7 @@ Fizz    73    74    FizzBuzz    76    77    Fizz    79    Buzz    Fizz
 82    83    Fizz    Buzz    86    Fizz    88    89    FizzBuzz    91    
 92    Fizz    94    Buzz    Fizz    97    98    Fizz    Buzz    
 ```
+# Program to find sum of two numbers using scanf.
 ```c
 #include<stdio.h>
  
