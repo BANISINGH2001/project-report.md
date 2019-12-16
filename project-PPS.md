@@ -191,22 +191,57 @@ Table of: 5
 #include<stdio.h>
 int main()
 {
-int i,j;
-printf("Table of:");
-scanf("%d\n",&j);
-if(j%2==0)
-{
-for(i=0;i<=10;i++)
-printf("%d X  %d  =  %d\n",j,i,j*i);
-}
-else
-{
-printf("Number is not even\n");
+
+        int a,b,i,j;
+        printf("\nENTER THE FIRST NUMBER : ");
+        scanf("%d",&a);
+        printf("\nENTER THE SECOND NUMBER : ");
+        scanf("%d",&b);
+        for(a=a;a<=b;a++)
+        {
+         if(a%2==0)
+         {
+             for(i=0;i<=10;i++)
+
+                {
+                j=a*i;
+                printf("\n%d * %d = %d\n",a,i,j);
+                }
+        }
 }
 
 return 0;
 }
 ```
+# Output
+```c
+ENTER THE FIRST NUMBER : 3
+
+ENTER THE SECOND NUMBER : 5
+
+4 * 0 = 0
+
+4 * 1 = 4
+
+4 * 2 = 8
+
+4 * 3 = 12
+
+4 * 4 = 16
+
+4 * 5 = 20
+
+4 * 6 = 24
+
+4 * 7 = 28
+
+4 * 8 = 32
+
+4 * 9 = 36
+
+4 * 10 = 40
+```
+
 # Program to convert farheneit into centigrade.
 ```c
 #include<stdio.h>
@@ -256,116 +291,6 @@ printf("\n");
 }
 return 0;
 }
-```
-
-```c
-#include<stdio.h>
-int main(){
-int  a,b,i,lcm,gcd;
-printf("Enter 1st integer:\n");
-scanf("%d",&a);
-printf("enter 2nd intger:\n");
-scanf("%d",&b);
-printf("\n");
-
-for(int i=1;i<=a&&i<=b;i++)
-{
-if(a%i==0 && b%i==0)
-gcd=i;
-}
-lcm=(a*b)/gcd;
-printf("lcm=%d",lcm);
-
-return 0;
-}
-```
-```c
-#include<stdio.h>
-int main(){
-int m,n,p,q;
-printf("enter number of rows of 1st matrix: ");
-scanf("%d",&m);
-printf("enter number of columns of 1st matrix: ");
-scanf("%d",&n);
-printf("enter number of rows of 2nd matrix: ");
-scanf("%d",&p);
-printf("enter number of columns of 2nd matrix: ");
-scanf("%d",&q);
-
-if(n==p){
-//for matrix 1
-puts("\n\t matrix 1");
-int matrix1[m][n];
-// input for matrix 1
-for(int i=1;i<=m;i++){
-for(int j=1;j<=n;j++){
-printf("enter value at %dth row and %dth column : ",i,j);
-scanf("%d",&matrix1[i][j]);
-}}
-// output for matrix 1
-puts("\nmatrix 1 is -->");
-for(int i=1;i<=m;i++){
-for(int j=1;j<=n;j++){
-printf("%d\t",matrix1[i][j]);
-if(j==n)
-printf("\n");}}
-
-//matrix 2
-int matrix2[p][q];
-
-puts("\n\t matrix 2");
-// input for matrix 2
-for(int k=1;k<=p;k++){
-for(int l=1;l<=q;l++){
-printf("enter value at %dth row and %dth column : ",k,l);
-scanf("%d",&matrix2[k][l]);
-}}
-// output for matrix 2
-puts("\nmatrix 2 is -->");
-for(int k=1;k<=p;k++){
-for(int l=1;l<=q;l++){
-printf("%d\t",matrix2[k][l]);
-if(l==q)
-printf("\n");}}
-
-//multiplication of both matrices
-int matrix[m][q];
-int sum=0;
-//multiplication
-for(int a=1;a<=m;a++){
-for(int b=1;b<=q;b++){
-for(int c=1;c<=p;c++){
-sum =sum + matrix1[a][c]*matrix2[c][b];}
-matrix[a][b]=sum;
-sum=0;}}
-//output for matrix 
-puts("\n\t product of two matrices is -->");
-for(int a=1;a<=m;a++){
-for(int b=1;b<=q;b++){
-printf("%d\t",matrix[a][b]);
-if(b==q)
-printf("\n");
-}}
-}
-return 0;
-}
-```
-```c
-#include<stdio.h>
-int main()
-{
-int arra[5]={1,5,8,2,7};
-int c;
-printf("enter the number you want to check");
-scanf("%d",&c);
-for(int i=0;i<5;i++)
-{
-if(c==arra[i])
-{printf("yes");}
-else
-printf("no");
-}
-return 0;}
 ```
 # Program to check whether the number is armstrong number or not.
 ```c
@@ -828,4 +753,51 @@ int main()
  ```c
  Enter the number of elements:15
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
+```
+# Program to sort array elements using selection sort.
+```c
+#include <stdio.h>
+int main()
+{
+int a[100], n, i, j, position, swap;
+printf("Enter number of elementsn");
+scanf("%d", &n);
+printf("Enter %d Numbersn", n);
+for (i = 0; i < n; i++)
+scanf("%d", &a[i]);
+for(i = 0; i < n - 1; i++)
+{
+position=i;
+for(j = i + 1; j < n; j++)
+{
+if(a[position] > a[j])
+position=j;
+}
+if(position != i)
+{
+swap=a[i];
+a[i]=a[position];
+a[position=swap;
+}
+}
+printf("Sorted Array:n");
+for(i = 0; i < n; i++)
+printf("%dn", a[i]);
+return 0;
+}
+```
+# Output
+```c
+Enter number of elements 
+4
+Enter 4 numbers 
+4
+2
+7
+1
+Sorted array:
+1
+2
+4
+7
 ```
