@@ -49,7 +49,7 @@ printf("Given number %d is Odd \n",num);
 return 0;
 }
 ```
- # Program to check whether the number is even or odd.
+ # Program to check whether the number is positive or negative.
  ```c
     #include<stdio.h>
 
