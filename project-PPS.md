@@ -31,47 +31,71 @@ printf("%d\n",sum);
 return 0;
 }
 ```
+# Output
+```c
+Enter number of employeers:3
+Enter experience of 1 th employeers:5
+Enter experience of 2 th employeers:3
+Enter experience of 3 th employeers:4
+12
+```
 # Program to find whether the number is even or odd.
 ```c
 #include<stdio.h>
 int main()
+
 {
+int a;
 
-int  num;
-printf("Enter any number:");
-scanf("%d",&num);
+printf("\n\nENTER THE NUMBER : ");
+scanf("%d",&a);
 
-if (num%2==0)
-printf("Given number %d is Even \n",num);
+if (a%2==0)
+{
+printf("\n\nNUMBER IS EVEN");
+}
+
 else
-printf("Given number %d is Odd \n",num);
-
+{                                                                        
+printf("\n\nNUMBER IS ODD\n\n");
+}
 return 0;
 }
 ```
- # Program to check whether the number is positive or negative.
- ```c
-    #include<stdio.h>
+# Output
+```c
+ENTER THE NUMBER : 5
 
+
+NUMBER IS ODD
+```
+
+# Program to check whether the number is positive or negative.
+ ```c
+   #include<stdio.h>
 int main()
 {
+int a;
 
-int num;
-printf("Enter any number: \n");
-scanf("%d",&num);
-
-if(num>0)
-printf("%d is positive number \n",num );
-
-else if(num<0)
-printf("%d is negative number \n",num );
-
+printf("ENTER THE NUMBER : ");
+scanf("%d",&a);
+if (a>0)
+{
+printf("NUMBER IS POSITIVE");
+}
 else
-printf("You have entered value zero \n");
-
+{
+printf("NUMBER IS NEGATIVE");                                               
+}                                                        
 return 0;
 }
 ```
+# Output
+```c
+ENTER THE NUMBER : 5
+NUMBER IS POSITIVE
+```
+
 ```c
 #include<stdio.h>
 int main()
@@ -104,22 +128,33 @@ return 0;
 ```
 # Program to display the table between the range.
 ```c
-#include<stdio.h>
-int main()
-{
-int n,i,range;
-printf("Table of:");
-scanf("%d",&n);
-printf("Enter the  range:");
-scanf("%d",&range);
-
-for(i=1;i<=range;++i)
-{
-printf("%d X %d = %d\n",n,i,n*i);
-}
-return 0;
+#include <stdio.h>
+int main() {
+    int n, i, range;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    printf("Enter the range: ");
+    scanf("%d", &range);
+    for (i = 1; i <= range; ++i) {
+        printf("%d * %d = %d \n", n, i, n * i);
+    }
+    return 0;
 }
 ```
+# Output
+```c
+Enter an integer: 12
+Enter the range: 8
+12 * 1 = 12 
+12 * 2 = 24 
+12 * 3 = 36 
+12 * 4 = 48 
+12 * 5 = 60 
+12 * 6 = 72 
+12 * 7 = 84 
+12 * 8 = 96
+```
+
 # Program to display the table of user choice.
 ```c
 #include<stdio.h>
@@ -134,6 +169,22 @@ printf("%d x %d = %d\n",j,i,j*i);
 
 return 0;
 }
+```
+# Output
+```c
+Table of: 5
+
+5 X 0 = 0
+5 X 1 = 5
+5 X 2 = 10
+5 X 3 = 15
+5 X 4 = 20
+5 X 5 = 25
+5 X 6 = 30
+5 X 7 = 35
+5 X 8 = 40
+5 X 9 = 45
+5 X 10 = 50
 ```
 # Program to display the table of only even numbers between the range.
 ```c
@@ -174,47 +225,15 @@ printf("\n %.2f fehrenheit= %.2f celcius \n", fehrenheit,celcius);
 return 0;
 }
 ```
-# Program to
+# Output
 ```c
-#include<stdio.h>
+Please enter the temperature in fahrenheit: 
+90
 
-int main()
-{
- int n[10];
- int i,j;
-
- for(i=10;i<10;i++)
-{
-  n[i]=i+100;
-}
- for(j=0;j<10;j++)
-{
- printf( "Element[%d]= %d\n",j,n[j] );
-}
- return 0;
-}
+90.00 fahrenheit= 32.22 celsius 
 ```
-# Program 
-```c
-#include<stdio.h>
-int main()
-{
- int a,b, result, n, i;
- printf("Enter the number of terms: ");
- scanf("%d", &n);
 
- a=0;
- b=1;
 
- for(i=1; i<=n; i++)
-{
-   printf("%d\n",a);
-   result=a+b;
-   a=b;
-   b=result;
-}
-}
-```
 # Program to draw pyramid.
 ```c
 #include<stdio.h>
@@ -239,25 +258,6 @@ return 0;
 }
 ```
 
-```c
-#include<stdio.h>
-int main(){
-int  a,b,i,hcf;
-printf("Enter 1st integer:\n");
-scanf("%d",&a);
-printf("enter 2nd intger:\n");
-scanf("%d",&b);
-
-for(int i=1;i<=a||i<=b;i++)
-{
-if(a%i==0 && b%i==0)
-hcf=i;
-}
-printf("hcf=%d",hcf);
-
-return 0;
-}
-```
 ```c
 #include<stdio.h>
 int main(){
