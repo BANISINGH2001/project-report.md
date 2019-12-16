@@ -11,7 +11,7 @@
 | Submitted to           | Er. RANJODH KAUR| 
 ___________________________________
 
-|## Sno.	|									|
+| S NO.	|	PROGRAM NAMES								|
 ---------|-----------------------------------------------------------------|
 |  1	|Program to find the total experience of employees									|
 |   2	|	Program to find whether the number is even or odd.								|
