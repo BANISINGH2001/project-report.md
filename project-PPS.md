@@ -660,18 +660,6 @@ First run:
     Enter second number: 20 
     Choose operation to perform (+,-,*,/,%): +
     Result: 10 + 20 = 30.000000 
-
-    Second run:
-    Enter first number: 10
-    Enter second number: 3
-    Choose operation to perform (+,-,*,/,%): /
-    Result: 10 / 3 = 3.333333 
-
-    Third run:
-    Enter first number: 10
-    Enter second number: 3
-    Choose operation to perform (+,-,*,/,%): >
-    Invalid operation.
    
 ```
 # Program to find the Factorial of a number.
@@ -731,4 +719,113 @@ int find_factorial(int n)
 ```c
 Enter any integer number: 4
 factorial of 4 is: 24
+```
+# Program to enter elements in an array and show all enen numbers.
+```c
+ #include <stdio.h>
+    void main()
+    {
+ 
+        int array[100], i, num;
+        printf("Enter the size of an array \n");
+ 
+        scanf("%d", &num);
+        printf("Enter the elements of the array \n");
+ 
+        for (i = 0; i < num; i++) 
+        {
+            scanf("%d", &array[i]);
+        }
+ 
+        printf("Even numbers in the array are - ");
+        for (i = 0; i < num; i++) 
+        {
+            if (array[i] % 2 == 0) 
+            {
+                printf("%d \t", array[i]);
+            }
+        }
+return 0;
+}
+```
+# Output
+```c
+Enter the size of an array
+6
+Enter the elements of the array
+12
+19
+45
+69
+98
+23
+Even numbers in the array are - 12     98
+```
+# Program to find greater among an array.
+```c
+
+#include <stdio.h>
+ 
+int main()
+{
+ 
+        int array[50], size, i, largest;
+ 
+        printf("\n Enter the size of the array: ");
+	scanf("%d", &size);
+ 
+        printf("\n Enter %d elements of  the array: ", size);
+ 
+        for (i = 0; i < size; i++)
+		scanf("%d", &array[i]);
+ 
+        largest = array[0];
+ 
+        for (i = 1; i < size; i++) 
+        {
+		if (largest < array[i])
+			largest = array[i];
+	}
+ 
+        printf("\n largest element present in the given array is : %d", largest);
+ 
+        return 0;
+ 
+}
+```
+# Output
+```c
+Enter the size of the array: 5
+ 
+Enter 5 elements of  the array: 12
+56
+34
+78
+100
+ 
+largest element present in the given array is : 100
+```
+# Program to display fibonacci series.
+```c
+#include<stdio.h>    
+int main()    
+{    
+ int n1=0,n2=1,n3,i,number;    
+ printf("Enter the number of elements:");    
+ scanf("%d",&number);    
+ printf("\n%d %d",n1,n2);//printing 0 and 1    
+ for(i=2;i<number;++i)    
+ {    
+  n3=n1+n2;    
+  printf(" %d",n3);    
+  n1=n2;    
+  n2=n3;    
+ }  
+  return 0;  
+ }
+ ```
+ # Output
+ ```c
+ Enter the number of elements:15
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
 ```
